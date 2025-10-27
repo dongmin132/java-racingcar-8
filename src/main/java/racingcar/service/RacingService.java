@@ -1,5 +1,6 @@
 package racingcar.service;
 
+import racingcar.model.domain.Car;
 import racingcar.model.domain.RacingGame;
 import racingcar.model.rule.MoveStrategy;
 
@@ -24,6 +25,10 @@ public class RacingService {
 
     public List<String> getWinners() {
         return racingGame.getWinners();
+    }
+
+    public List<Car> getCars() {
+        return racingGame.getCars();
     }
 
     private void validateRoundCount(int count) {
