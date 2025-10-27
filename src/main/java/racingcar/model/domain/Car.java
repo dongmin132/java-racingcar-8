@@ -1,12 +1,14 @@
 package racingcar.model.domain;
 
 import racingcar.model.rule.MoveStrategy;
+import racingcar.validatior.CarValidator;
 
 public class Car {
     private final String name;
     private int position = 0;
 
     public Car(String name) {
+        new CarValidator().validate(name);
         this.name = name;
     }
 
