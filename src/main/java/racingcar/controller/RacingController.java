@@ -15,7 +15,7 @@ public class RacingController {
 
         OutputView.printStartMessage();
         for (int i = 0; i < roundCount; i++) {
-            racingservice.runRound(i);
+            racingservice.runRound();
             OutputView.printRoundResult(racingservice.getCars());
         }
 

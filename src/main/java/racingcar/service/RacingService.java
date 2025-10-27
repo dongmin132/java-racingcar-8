@@ -16,11 +16,8 @@ public class RacingService {
         this.moveStrategy = moveStrategy;
     }
 
-    public void runRound(int roundCount) {
-        validateRoundCount(roundCount);
-        for (int i = 0; i < roundCount; i++) {
+    public void runRound() {
             racingGame.playRound(moveStrategy);
-        }
     }
 
     public List<String> getWinners() {
